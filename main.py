@@ -3,10 +3,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'Hello, World!'
+    return 'Hello, World!!!!!!'
 
 
-@app.route('/', methods=['POST'])
+@app.route('/incoming', methods=['POST'])
 def incoming():
     print("post req")
     return Response(status=200)
